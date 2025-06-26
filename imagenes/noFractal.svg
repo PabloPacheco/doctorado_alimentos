@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="479.10281mm"
+   height="150.26295mm"
+   viewBox="0 0 479.10281 150.26295"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="fractal_no_fractal.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.16031672"
+     inkscape:cx="-998.02441"
+     inkscape:cy="882.62784"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ef0808;stroke-width:1.814;stroke-dasharray:10.884, 3.62799;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect2"
+         width="67.235245"
+         height="75.404198"
+         x="84.787682"
+         y="682.7149" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ef0808;stroke-width:0.688602;stroke-dasharray:4.13162, 1.3772;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect3"
+         width="25.522789"
+         height="28.623758"
+         x="110.53519"
+         y="705.73492" />
+    </clipPath>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-3" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(551.45747,-102.75009)">
+    <rect
+       style="opacity:0.900277;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.92274;stroke-dasharray:23.5363, 7.84545"
+       id="rect6-9-3"
+       width="479.10278"
+       height="150.26295"
+       x="-551.45746"
+       y="102.75009"
+       inkscape:export-filename="..\..\..\..\Desktop\reveal.js-master\imagenes\noFractal.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g6"
+       transform="translate(-2.2952635,5.65224)">
+      <circle
+         style="fill:#989898;fill-opacity:1;stroke:#000000;stroke-width:1.60664;stroke-dasharray:none;stroke-opacity:1"
+         id="path1"
+         cx="-428.80829"
+         cy="172.22932"
+         r="61.412441"
+         inkscape:export-filename="noFractal.png"
+         inkscape:export-xdpi="120"
+         inkscape:export-ydpi="120" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ef0808;stroke-width:2.16062;stroke-dasharray:12.9637, 4.32125;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect1"
+         width="41.340385"
+         height="46.363163"
+         x="-391.42862"
+         y="148.55219" />
+      <circle
+         style="fill:#989898;fill-opacity:1;stroke:#000000;stroke-width:0.991906;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-6"
+         cx="23.99403"
+         cy="721.22296"
+         r="99.880066"
+         clip-path="url(#clipPath2)"
+         transform="matrix(1.6197442,0,0,1.6197442,-451.93963,-994.31725)" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ef0808;stroke-width:2.16062;stroke-dasharray:12.9637, 4.32125;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect1-8"
+         width="41.340385"
+         height="46.363163"
+         x="-272.90091"
+         y="148.79277" />
+      <circle
+         style="fill:#989898;fill-opacity:1;stroke:#000000;stroke-width:0.375649;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-6-0"
+         cx="23.99403"
+         cy="721.22296"
+         r="99.880066"
+         clip-path="url(#clipPath3)"
+         transform="matrix(4.2769514,0,0,4.2769514,-658.80441,-2907.1746)" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.11536;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+         d="m -344.75994,173.5276 h 21.16745"
+         id="path3" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.11536;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle-6)"
+         d="m -226.86882,173.80391 h 21.16744"
+         id="path3-4" />
+    </g>
+  </g>
+</svg>

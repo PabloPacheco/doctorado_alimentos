@@ -1,0 +1,2294 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Propuesta de Tesis Doctorado</title>
+
+		<meta name="description" content=" ">
+		<meta name="author" content="PPP">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css" id="theme">
+        <!-- Black - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized  -->
+                            
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/night.css">
+        
+      
+        <style>
+            /* Estilo para el cuadro */
+            #miCuadro {
+                position: fixed;
+                bottom: 100%;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.);
+                color: #fff;
+                padding: 6px;
+            }     
+          
+          .highlight-box {
+                background-color: rgba(0, 0, 0, 0.85);  /* negro con algo de transparencia */
+                color: white;                          /* letra blanca */
+                border: 2px solid white;              /* borde blanco */
+                border-radius: 10px;
+                padding: 15px;
+                font-size: 22px;
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* sombra blanca suave */
+              }          
+          
+            .reveal {
+              background-color: #000000 !important;
+            }
+
+            .reveal .slides {
+              background: transparent !important;
+            }
+          
+            /* Estilos personalizados para el número de la diapositiva */
+            .reveal .slide-number {
+                position: absolute;
+                bottom: 10px;
+                left: 10px; /* Cambia la posición horizontal */
+                font-size: 33px; /* Cambia el tamaño del número */
+                color: white; /* Cambia el color del número */
+            }
+            
+            
+            .twocolumn {
+               display: flex;
+               align-items: center;
+               justify-content: space-around;
+               grid-template-columns: 1fr 1fr;
+               grid-gap: 5px;
+               text-align: left;
+            }
+            
+            
+            .twocolumn div {
+                flex: 1;  /* Permite que las columnas ocupen el mismo ancho */
+                text-align: center;  /* Centra el contenido horizontalmente */
+            }
+            
+            .two-column-list {
+                column-count: 2;
+                column-gap: 9px;  /* Espacio entre las columnas */
+            }
+            
+
+        </style>
+        
+        
+	</head>
+    
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+  
+            <div class="menubar">
+                <ul class="menu"></ul> 
+            </div>
+
+<!--
+Fade In/Out:
+
+fragment fade-in: Hace que el fragmento aparezca con un efecto de desvanecimiento.
+fragment fade-out: Hace que el fragmento desaparezca con un efecto de desvanecimiento.
+Slide:
+
+fragment fade-left: Hace que el fragmento aparezca deslizándose desde la izquierda.
+fragment fade-right: Hace que el fragmento aparezca deslizándose desde la derecha.
+fragment fade-up: Hace que el fragmento aparezca deslizándose desde arriba.
+fragment fade-down: Hace que el fragmento aparezca deslizándose desde abajo.
+Zoom:
+
+fragment zoom-in: Hace que el fragmento aparezca con un efecto de zoom hacia adentro.
+fragment zoom-out: Hace que el fragmento desaparezca con un efecto de zoom hacia afuera.
+Grow/Shrink:
+
+fragment grow: Hace que el fragmento aparezca creciendo.
+fragment shrink: Hace que el fragmento desaparezca encogiéndose.
+Highlight:
+
+fragment highlight-current-blue: Hace que el fragmento actual se resalte en azul.
+fragment highlight-current-red: Hace que el fragmento actual se resalte en rojo.
+-->                
+                
+
+<!--||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||PORTADA|||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||-->                
+                
+                
+            <section data-state="hide-menubar hide-menu">
+                
+                
+                <!--portada-->
+                <section>
+                  <h6>Técnicas de Deshielo de Evaporadores: Análisis Bibliométrico</h6>
+
+                  <p style="font-size: 21px; text-align: center;">
+                    <img src="imagenes/Universidad_de_La_Serena_escudo.png" width="150"><br>
+                    <strong>Propuesta de Tesis</strong><br>
+                    Alumno: Pablo Pacheco Pérez<br><br>
+
+                    Profesor Patrocinante: Dra. Issis Quispe Fuentes<br>
+                    Profesor Co-guía: Dr. Luis Silva Llanca<br><br>
+
+                    Universidad de La Serena<br>
+                    Departamento de Ingeniería en Alimentos<br>
+                  </p>
+                </section>
+
+                <section>
+                  <h6>Contenido</h6>
+
+                  <div style="display: flex; gap: 50px; justify-content: space-between; font-size: 25px;">
+                    <!-- Columna 1 -->
+                    <div style="flex: 1; text-align: justify;">
+                      <div class="fragment fade-in-then-semi-out">
+                        <p><strong>Motivación</strong></p>
+                      </div>
+
+                      <div class="fragment fade-in-then-semi-out">
+                        <p><strong>Análisis bibliométrico</strong></p>
+                        <ul>
+                          <li>Extracción de datos y Procesamiento</li>
+                          <li>Modelación de tópicos</li>
+                          <li>Espectroscopía de año de publicaciones</li>
+                          <li>Análisis de redes</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div style="flex: 1; text-align: justify;">
+                      <div class="fragment fade-in-then-semi-out">
+                        <p><strong>Propuesta de Trabajo</strong></p>
+                        <ul>
+                          <li>Objetivos</li>
+                          <li>Hipótesis</li>
+                          <li>Metodología</li>
+                          <li>Publicaciones</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            </section>
+
+            <section data-name="Motivación">                      
+              
+                <section>
+                  <h4>Motivación</h4>
+
+                  <div class="twocolumn" style="display: flex; gap: 40px; align-items: flex-start;">
+
+                    <!-- Columna de texto -->
+                    <div style="flex: 1; font-size: 20px; text-align: justify;">
+
+                      <div class="fragment fade-in" style= "text-align: left;">
+                        <p><strong>Crisis a nivel mundial</strong></p>
+                        <ul>
+                          <li>Cambio climático</li>
+                          <li>Pérdida de naturaleza y biodiversidad</li>
+                          <li>Contaminación y desechos</li>
+                        </ul>
+                      </div>
+
+                      <div class="fragment fade-in" style= "text-align: left;">
+                        <p><strong>Agenda 2030</strong></p>
+                        <ul>
+                          <li>Objetivos de desarrollo sostenible (SDG)</li>
+                          <li>Mejorar la sostenibilidad de la cadena de frío de los alimentos</li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <!-- Columna de imagen -->
+                    <div style="flex: 1; text-align: center;">
+                      <img src="imagenes/motivacion1.png" alt="Motivación" style="max-width: 100%; max-height: 350px;">
+                    </div>
+
+                  </div>
+                </section>
+              
+                <section>
+                  <h4>Motivación</h4>
+
+                  <div class="twocolumn" style="display: flex; gap: 40px; align-items: flex-start;">
+
+                    <!-- Columna de texto -->
+                    <div style="flex: 1; font-size: 20px; text-align: left;">
+
+                      <div class="fragment fade-in" style="text-align: left;">
+                        <p><strong>Total de alimentos para consumo humano</strong></p>
+                        <ul>
+                          <li>Se pierde un 14% <sup>(1)</sup></li>
+                          <li>Se desperdicia un 17% <sup>(2)</sup></li>
+                          <li>Costo para economía mundial: 936.000M USD/año <sup>(3)</sup></li>
+                        </ul>
+                      </div>
+
+                      <div class="fragment fade-in" style="text-align: left;">
+                        <p><strong>Falta de refrigeración eficaz</strong></p>
+                        <ul>
+                          <li>En 2017 se perdió el 12% de producción alimentaria mundial <sup>(4)</sup></li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <!-- Columna de imagen -->
+                    <div style="flex: 1; text-align: center;">
+                      <img src="imagenes/motivacion3.png" alt="Pérdida de alimentos" style="max-width: 100%; max-height: 350px;">
+                    </div>
+
+                  </div>
+
+                  <!-- Referencias al pie -->
+                  <div style="font-size: 12px; margin-top: 30px; text-align: left; column-count: 2">
+                    <p>(1) Organización de las Naciones Unidas para la Alimentación y la Agricultura [FAO], 2019</p>
+                    <p>(2) PNUMA, 2021</p>
+                    <p>(3) FAO, 2014a</p>
+                    <p>(4) Instituto Internacional de Refrigeración [IIF/IIR], 2021a</p>
+                  </div>
+                </section>
+              
+                <section>
+                  <h4>Motivación</h4>
+
+                  <div class="twocolumn" style="display: flex; gap: 40px; align-items: flex-start;">
+
+                    <!-- Columna de texto -->
+                    <div style="flex: 1; font-size: 20px; text-align: left;">
+
+                      <div class="fragment fade-in; text-align: left;">
+                        <p><strong>Cambio climático: Emisiones por pérdida y desperdicio de alimentos</strong></p>
+                        <ul>
+                          <li>Cadena de frío de los alimentos: responsable de alrededor del 4% de las emisiones totales mundiales de gases de efecto invernadero</li>
+                        </ul>
+                      </div>
+
+                      <div class="fragment fade-in; text-align: left;">
+                        <p><strong>Objetivos de desarrollo sostenible (7 y 13)</strong></p>
+                        <ul>
+                          <li>Lograr altos estándares de desempeño ambiental</li>
+                          <li><strong>Reducir el consumo de energía</strong></li>
+                          <li>Utilizar fuentes de energía renovables</li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <!-- Columna de imágenes (una debajo de la otra) -->
+                    <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+                      <img src="imagenes/copo.svg" alt="Imagen 1" style="max-width: 120%; max-height: 180px; margin-bottom: 20px;">
+                      <img src="imagenes/co2.svg" alt="Imagen 2" style="max-width: 120%; max-height: 180px;">
+                    </div>
+
+                  </div>
+
+                  <!-- Referencia al pie -->
+                  <div style="font-size: 12px; margin-top: 30px; text-align: left;">
+                    <p>(1) IIF/IIR, 2021</p>
+                  </div>
+                </section>
+
+                
+            </section>
+              
+              
+                                                              
+            <section data-name="Bibliométrico">
+                
+                <section>
+                    <h4>Análisis Bibliométrico</h4>
+                    
+                    <ul class="fragment fade-in-then-semi-out" style="font-size: 30px; text-align: left; text-align-last: left;">
+                        <li>Obtención y procesamiento de datos</li>
+                        <li>Descripción de datos</li>
+                        <li>Modelación de tópicos</li>
+                        <li>Espectroscopía de publicaciones</li>
+                        <li>Análsis de redes</li>
+                        <li>Conclusiones</li>
+                    </ul>
+                
+                </section>
+                
+                
+                <section>
+                  <h4>Análisis bibliométrico</h4>
+
+                  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px;">
+
+                    <!-- Columna izquierda: texto -->
+                    <div style="flex: 1;">
+                      <p class="fragment fade-left" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Evaluar y visualizar la producción científica - estudio cuantitativo.
+                      </p>                  
+                      <p class="fragment fade-right" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Seleccionar revistas o congresos con alta probabilidad de publicación.
+                      </p>
+                      <p class="fragment fade-up" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Identificar líderes en trabajos, autores e instituciones.
+                      </p>
+                      <p class="fragment fade-down" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Evaluar colaboraciones que generan mayor visibilidad.
+                      </p>
+                      <p class="fragment fade-left" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Detectar temas emergentes y oportunidades de innovación.
+                      </p>
+                    </div>
+
+                    <!-- Columna derecha: imagen -->
+                    <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                      <img src="imagenes/bibliometrico.png" alt="Análisis bibliométrico" style="max-width: 100%; max-height: 400px;">
+                    </div>
+
+                  </div>
+                </section>
+                
+                
+              <section>
+                  <h4>Problema: Deshielo de evaporadores</h4>
+
+                  <p class="fragment" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                      El agua contenida en el aire se condensa sobre las aletas y los tubos $\rightarrow$ formación de hielo
+                  </p> 
+                  <div class="r-stack">
+                      <img class = "fragment current-visible" src="imagenes/evaporator2.jpg" width="650">
+                      <img class = "fragment current-visible" src="imagenes/subzero_not_defrosting.jpg" width="650">
+                  </div>
+
+              </section>    
+              
+              
+              <section>
+                <h4>Formación de escarcha en sistemas HVAC y refrigeración</h4>
+
+                <!-- Dos columnas -->
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+
+                  <!-- Columna izquierda: lista de ítems -->
+                  <div style="flex: 1;">
+                    <ul style="font-size: 21px;">
+                      <li class="fragment">
+                        Actúa como aislante térmico.
+                      </li>
+                      <li class="fragment">
+                        Disminuye el COP del sistema y aumenta el consumo energético.
+                      </li>
+                      <li class="fragment">
+                        Puede reducir hasta en un 75 % la eficiencia de transferencia de calor.
+                      </li>
+                    </ul>
+
+                    <!-- Referencia -->
+                    <p style="font-size: 14px; margin-top: 20px;text-align: left;">
+                      Sarmiento, A. P., de Sá Sarmiento, F. I., Shooshtari, A., and Ohadi, M. (2024). <em>A review of recent progress in active frost prevention/control techniques in refrigeration and HVAC systems</em>. Applied Thermal Engineering, 253, 123680.
+                    </p>
+                  </div>
+
+                  <!-- Columna derecha: espacio para imagen -->
+                  <div style="flex: 1; display: flex; justify-content: center; align-items: left;">
+                    <img src="imagenes/frost.jpg" alt="Ejemplo de formación de escarcha" style="max-width: 100%; max-height: 400px;" />
+                  </div>
+
+                </div>
+              </section>  
+            
+<!--
+https://www.youtube.com/watch?v=U2ktTVIqdkQ&ab_channel=AMRESupply
+https://www.youtube.com/watch?v=d_LgySDSND4&ab_channel=AMRESupply
+-->
+
+                <section>
+                    <h4>Análisis bibliométrico - Procesamiento de datos</h4>
+
+                        <ul class="fragment fade-in-then-semi-out" style="font-size: 18px; text-align: left; text-align-last: left;">
+                            <li>WOS</li>
+                            <li>Búsqueda: TS = (evaporator* AND (defrosting* OR anti-frosting* OR defrost*))</li>
+                            <li>Documentos: Papers | Review</li>
+                            <li>Intervalo de tiempo: 1978 - 2025</li>
+                            <li>N° de documentos: 314</li>
+                            
+                        </ul>
+                    
+                    <img src = "imagenes/wos_custom.PNG" width = "666">                
+                
+                </section>    
+              
+              
+                <section>
+                  <h4>Análisis Bibliométrico - Herramientas</h4>
+                  <!-- Logos en dos columnas -->
+                  <div style="display: flex; justify-content: center; align-items: center; gap: 60px; margin: 20px 0;">
+                    <img src="imagenes/python-logo.png" alt="Python Logo" width="300" />
+                    <img src="imagenes/Google_Colaboratory.png" alt="Google Colab Logo" width="150" />
+                  </div>
+
+                  <!-- Lista de herramientas -->
+                  <ul style="font-size: 24px;">
+                    <li class="fragment">
+                      <strong>litstudy</strong>
+                      <p style="font-size: 14px; margin-top: 5px;">
+                        Heldens, S. et al. (2022). <em>litstudy: A Python package for literature reviews</em>. SoftwareX, 20, 101207.  
+                        <br>Amsterdam Science Park.
+                      </p>
+                    </li>
+                    <li class="fragment">
+                      <strong>pybibx</strong>
+                      <p style="font-size: 14px; margin-top: 5px;">
+                        Pereira, V., Basilio, M. P., and Santos, C. H. T. (2025). <em>PyBibX – a Python library for bibliometric and scientometric analysis powered with artificial intelligence tools</em>. Data Technologies and Applications.  
+                        <br>Universidade Federal Fluminense.
+                      </p>
+                    </li>
+                    <li class="fragment">
+                      <strong>metaknowledge</strong>
+                      <p style="font-size: 14px; margin-top: 5px;">
+                        McLevey, J., and McIlroy-Young, R. (2017). <em>Introducing metaknowledge: Software for computational research in information science, network analysis, and science of science</em>. Journal of Informetrics, 11(1), 176–197.  
+                        <br>University of Waterloo - University of Chicago.
+                      </p>
+                    </li>
+                  </ul>
+                </section>
+                
+                
+                <section>
+                  <h4>Análisis bibliométrico - Reporte general</h4>
+                  <p style="font-size: 14px; margin-top: -10px;">Generado con PyBibX</p>
+
+                  <div style="display: flex; justify-content: center; gap: 60px; font-size: 20px; margin-top: 20px;">
+
+                    <!-- Columna 1 -->
+                    <table style="border-collapse: collapse;">
+                      <tbody>
+                        <tr><td><strong>Timespan</strong></td><td>1978–2025</td></tr>
+                        <tr><td><strong>Countries</strong></td><td>34</td></tr>
+                        <tr><td><strong>Institutions</strong></td><td>268</td></tr>
+                        <tr><td><strong>Sources</strong></td><td>68</td></tr>
+                        <tr><td><strong>References</strong></td><td>4660</td></tr>
+                        <tr><td><strong>Languages</strong></td><td>3</td></tr>
+                        <tr><td><strong>Documents</strong></td><td>300</td></tr>
+                        <tr><td><strong>Article</strong></td><td>230</td></tr>
+                        <tr><td><strong>Retracted Publication</strong></td><td>1</td></tr>
+                        <tr><td><strong>Proceedings Paper</strong></td><td>55</td></tr>
+                      </tbody>
+                    </table>
+
+                    <!-- Columna 2 -->
+                    <table style="border-collapse: collapse;">
+                      <tbody>
+                        <tr><td><strong>Review</strong></td><td>12</td></tr>
+                        <tr><td><strong>Avg Docs/Author</strong></td><td>1.32</td></tr>
+                        <tr><td><strong>Avg Docs/Institution</strong></td><td>8.71</td></tr>
+                        <tr><td><strong>Avg Docs/Source</strong></td><td>3.66</td></tr>
+                        <tr><td><strong>Avg Docs/Year</strong></td><td>8.11</td></tr>
+                        <tr><td><strong>Authors</strong></td><td>919</td></tr>
+                        <tr><td><strong>Keywords</strong></td><td>699</td></tr>
+                        <tr><td><strong>Keywords Plus</strong></td><td>359</td></tr>
+                        <tr><td><strong>Single-Authored</strong></td><td>11</td></tr>
+                        <tr><td><strong>Multi-Authored</strong></td><td>289</td></tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </section>
+                
+                <section>                
+                  <h4>Análisis bibliométrico - Reporte general</h4>
+                  <img src="imagenes/defrost_publications_year.png" width="666">
+
+                  <p style="font-size: 16px; text-align: justify;">
+                    TS = (evaporator* AND (defrosting* OR anti-frosting* OR defrost*))
+                  </p>                                    
+                </section>
+                
+<!--
+                <section>
+                    <h4>Análisis bibliométrico - Reporte general</h4>
+                        <img src = "../tesis_doc2/imagenes/bibliometrico/defrost_top_authors.png" width = "666">
+                </section>
+-->
+                    
+                <section>
+                    <h4>Análisis bibliométrico - Reporte general</h4>
+                        <img src = "imagenes/defrost_top_words.png" width = "999">
+                  
+                    <p style="font-size: 16px; text-align: justify;">
+                      TS = (evaporator* AND (defrosting* OR anti-frosting* OR defrost*))
+                    </p>    
+                </section>
+              
+                    
+<!--- INICIO RPYS -->
+              
+
+                <section>
+                  <h6>Espectroscopía del Año de Publicación de Referencia (RPYS)</h6>
+
+                  <!-- Ideas resumidas en dos columnas con fade-in conjunto -->
+                  <div class="fragment fade-in" style="display: flex; justify-content: space-between; gap: 30px; margin-bottom: 20px;">
+                    <div style="flex: 1;">
+                      <p style="font-size: 17px; text-align: justify;">
+                        Analiza el impacto histórico de publicaciones científicas.
+                      </p>
+                      <p style="font-size: 17px; text-align: justify;">
+                        Detecta años pico en citas y contribuciones clave.
+                      </p>
+                      <p style="font-size: 17px; text-align: justify;">
+                        Se basa en contar los años de las referencias citadas.
+                      </p>
+                    </div>
+                    <div style="flex: 1;">
+                      <p style="font-size: 17px; text-align: justify;">
+                        Muestra la influencia acumulada a lo largo del tiempo.
+                      </p>
+                      <p style="font-size: 17px; text-align: justify;">
+                        Usa desviación respecto a la mediana para ajustar datos.
+                      </p>
+                      <p style="font-size: 17px; text-align: justify;">
+                        Elimina sesgos y revela rupturas conceptuales e hitos.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Imagen centrada -->
+                  <div style="text-align: center; margin: 20px 0;">
+                    <img src="imagenes/espectro.png" alt="Gráfico RPYS" style="width: 420px; height: auto;">
+                  </div>
+
+                  <!-- Referencias visibles desde el inicio -->
+                  <div style="margin-top: 20px; font-size: 14px; text-align: left;">
+                    <p>
+                      Comins, J. A., and Hussey, T. W. (2015). Compressing multiple scales of impact detection by Reference Publication Year Spectroscopy. <em>Journal of Informetrics</em>, 9(3), 449–454.
+                    </p>  
+                    <p>
+                      Wray, K. B., and Bornmann, L. (2015). Philosophy of science viewed through the lens of “Referenced Publication Years Spectroscopy” (RPYS). <em>Scientometrics</em>, 102, 1987–1996.
+                    </p>
+                  </div>
+                </section>
+
+                            
+              
+                <section>
+                  <h6 style="color: white;">Espectroscopía del Año de Publicación de Referencia</h6>
+
+                  <div style="text-align: center; margin-bottom: 20px;">
+                    <img class="fragment fade-in" src="imagenes/defrost_rpys.png" style="width: 900px;" />
+                  </div>
+                  
+                </section>
+
+              
+                <section>
+                  <h6 style="color: white;">Espectroscopía</h6>
+
+                  <div style="width: 95%; margin: 0 auto; color: white;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 18px; color: white;">
+                      <thead>
+                        <tr style="background-color: #333;">
+                          <th style="border: 1px solid white; padding: 8px; text-align: left;">Cita</th>
+                          <th style="border: 1px solid white; padding: 8px; text-align: center;">Nº de citas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Song et al. (2018). Review on improvement for air source heat pump units during frosting and defrosting. <i>Applied Energy, 211, 1150–1170</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">39</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Song et al. (2018). Experimental study on time-based start defrosting control strategy optimization for air source heat pumps. <i>Energy and Buildings, 178, 26–37</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">22</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Amer and Wang (2017). Review of passive defrosting surface methods in refrigeration systems.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">34</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Li et al. (2017). Improving defrosting performance by controlling frost distribution in household refrigerators. <i>International Journal of Refrigeration, 77, 136–148</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">15</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Wang et al. (2015). Effects of surface characteristic on frosting and defrosting in fin-tube heat exchangers. <i>Applied Thermal Engineering, 75, 1126–1132</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">24</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Zhu et al. (2015). Temperature–Humidity–Time defrosting control method for air-source heat pumps. <i>International Journal of Refrigeration, 54, 45–54</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">23</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              
+              
+                <section>
+                  <h6 style="color: white;">Espectroscopía</h6>
+
+                  <div style="text-align: center; margin-bottom: 20px;">
+                    <img class="fragment fade-in" src="imagenes/defrost_multi_rpys.png" style="width: 690px;" />
+                  </div>
+                  
+                </section>     
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Destacado - No Review
+                  </h5>
+                  
+                  <img src = "imagenes/Li_frost_distribution.png" width = "930">
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Li et al. (2017). Improving defrosting performance by controlling frost distribution in household refrigerators. International Journal of Refrigeration, 77, 136–148.                  
+                  </p>          
+                  
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Eficiencia de descongelación $\uparrow$ 29.8%</li>
+                      <li>Mejora distribución de masa de escarcha</li>              
+                    </ul>
+                  </div>                       
+              
+                </section>          
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Destacado - No Review
+                  </h5>
+                  
+                  <img src = "imagenes/Wang_surface.jpg" width = "600">
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Wang et al. (2015). Effects of surface characteristic on frosting and defrosting in fin-tube heat exchangers. Applied Thermal Engineering, 75, 1126–1132.              
+                  </p>                       
+              
+                </section>             
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Destacado - No Review
+                  </h5>
+                  
+                  <img src = "imagenes/no_review_ice.png" width = "600">
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Wang et al. (2015). Effects of surface characteristic on frosting and defrosting in fin-tube heat exchangers. Applied Thermal Engineering, 75, 1126–1132.              
+                  </p>                       
+              
+                </section>                     
+                                                
+
+<!--- ANALISIS DE REDES -->
+                
+                <section>
+                  <h4>Análisis de Redes</h4>
+                  <div style="display: flex; gap: 40px; align-items: flex-start;">
+
+                    <!-- Columna izquierda: texto -->
+                    <div style="flex: 1;">
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Permite estudiar la colaboración entre investigadores y las corrientes intelectuales de un campo.
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Se analizan redes de: coautoría, citación directa, acoplamiento bibliográfico y co-citación.
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Un grafo se define como una estructura matemática que modela las relaciones entre entidades académicas:<br><br>
+                        $$ G(V, E) $$
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Donde:
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        <strong>Nodos (V)</strong>: representan unidades discretas como autores, artículos o palabras clave.
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        <strong>Aristas (E)</strong>: representan relaciones entre nodos, como colaboraciones o citaciones.
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Los conjuntos se definen como:<br><br>
+                        $$ V = \{v_1, v_2, ..., v_N\} \quad \text{y} \quad E = \{e_1, e_2, ..., e_M\} $$
+                      </p>
+                    </div>
+
+                    <!-- Columna derecha: imagen -->
+                    <div style="flex: 1; text-align: center;">
+                      <img src="imagenes/network.svg" alt="Ejemplo de red" style="max-width: 80%; height: auto;">
+                    </div>
+
+                  </div>
+                </section>
+                        
+
+              
+                <section>
+                  <h4>Red de Coautoría</h4>
+                  <div style="display: grid; grid-template-columns: 55% 45%; gap: 10px;">
+
+                    <div>
+                      <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                        Se define un grafo no dirigido $\mathcal{G}_C = (V, E)$ donde:
+                        <br>
+                        • $V = \{a_1, a_2, \dots, a_n\}$ es el conjunto de autores.
+                        <br>
+                        • $E = \{(a_i, a_j) \mid \exists\, p_k \text{ tal que } a_i, a_j \, \text{coautores de } p_k\}$.
+                      </p>
+                      <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                        Representa colaboraciones académicas y permite identificar comunidades activas o investigadores influyentes.
+                      </p>
+                    </div>
+
+                    <div style="text-align: center;">
+                      <img src="imagenes/co-author_network.svg" style="width: 95%;"/>
+                    </div>
+
+                  </div>
+                </section>
+              
+              
+                <section>
+                  <h4>Red de Citación</h4>
+                  <div style="display: grid; grid-template-columns: 55% 45%; gap: 10px;">
+
+                    <div>
+                      <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                        Grafo dirigido $\mathcal{G}_{\text{Cit}} = (V, E)$ donde:
+                        <br>
+                        • $V = \{d_1, d_2, \dots, d_n\}$ es el conjunto de documentos.
+                        <br>
+                        • $E = \{(d_i, d_j) \mid d_i \text{ cita a } d_j\}$.
+                      </p>
+                      <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                        Esta red modela el flujo de conocimiento científico. Los nodos con muchas citas recibidas representan trabajos influyentes.
+                      </p>
+                    </div>
+
+                    <div style="text-align: center;">
+                      <img src="imagenes/citation_network.svg" style="width: 95%;"/>
+                    </div>
+
+                  </div>
+                  
+                  <p class="fragment fade-in" style="font-size: 14px; margin-top: 5px; text-align: left">
+                    Small, H. (1973). Co‐citation in the scientific literature: A new measure of the relationship between two documents. Journal of the American Society for information Science, 24(4), 265-269.
+                  </p>                                                      
+                </section>
+              
+              
+<!--              
+                <section>
+                  <h4>Medidas de Centralidad en Redes Científicas</h4>
+
+                  <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                    En el análisis de redes científicas, las <strong>medidas de centralidad</strong> permiten identificar los actores más relevantes dentro de la red, ya sea por su conectividad, posición estratégica o influencia estructural.
+                  </p>
+
+                  <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                    Las métricas más utilizadas en bibliometría incluyen:
+                  </p>
+
+                  <ul class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                    <li><strong>Centralidad de Grado (Degree Centrality)</strong></li>
+                    <li><strong>Centralidad de Cercanía (Closeness Centrality)</strong></li>
+                    <li><strong>Centralidad de Intermediación (Betweenness Centrality)</strong></li>
+                    <li><strong>Centralidad de Vector Propio (Eigenvector Centrality)</strong></li>
+                  </ul>
+
+                  <p class="fragment fade-in" style="font-size: 14px; margin-top: 10px; text-align: left;">
+                    Bamakan, S. M. H., Nurgaliev, I., and Qu, Q. (2019). <em>The applications of centrality measures in social network analysis: A survey</em>. <strong>Knowledge-Based Systems, 212</strong>, 106596. https://doi.org/10.1016/j.knosys.2020.106596<br>
+                    Golbeck, J. (2015). <em>Analyzing the social web</em>. Morgan Kaufmann.
+                  </p>
+                </section>
+-->
+
+                            
+                <section>
+                    <h4>Red de Coautores</h4>
+                        <div class = "p_iframe">
+                            <iframe src="imagenes/defrost_network_coauthor_ok.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>    
+              
+              
+                <section>
+                  <h4>Red de Coautores</h4>
+                    <img src = "imagenes/centrality_co-author_network.png" width = "800">            
+                </section>                                                                              
+              
+                <section>
+                    <h4>Red de Citación</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/defrost_network_citation_ok.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>     
+              
+                <section>
+                  <h4>Red de Citación</h4>
+                    <img src = "imagenes/centrality_citation_network.png" width = "800">            
+                </section>    
+              
+                
+                <section>
+                  <h4>Modelación de Tópicos - NNMF</h4>
+
+                  <p class="fragment fade-in-then-semi-out" style="font-size: 28px; text-align: justify;">
+                    Identificar tendencias, temas emergentes y áreas consolidadas.
+                  </p>
+
+                  <p class="fragment fade-in-then-semi-out" style="font-size: 28px; text-align: justify;">
+                    Segmentar el conocimiento dentro de un campo.
+                  </p>
+                                    
+                  <p class="fragment fade-in-then-semi-out" style="font-size: 28px; text-align: justify;">
+                    Word Cloud $\rightarrow$ documentos representativos $\rightarrow$ Nombre del tópico 
+                  </p>
+
+                </section>
+
+                
+                <section>
+                    <h4>Non-negative Matrix Factorization</h4>
+                    
+                        <p class="fragment fade-down" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                            Algoritmo de Agrupación
+                            
+                            $$ \mathbf{X} = \mathbf{W} \mathbf{H} $$
+                            
+                            donde $\mathbf{X} \in \R^{p \times n}$, $\mathbf{W} \in \R^{p \times r}$ y $\mathbf{H} \in \R^{r \times n}$
+                        </p>                   
+                    
+                        <p class="fragment fade-down" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                            Norma de Frobenius: forma de medir la aproximación numérica de $\mathbf{X} \simeq \mathbf{W} \mathbf{H}$:
+                            
+                            $$ \text{Error} = \text{min} \left| \left| \mathbf{X} - \mathbf{W} \mathbf{H} \right| \right|_F^2 = \sum_{i,j} \left(\mathbf{X} - \mathbf{W} \mathbf{H}\right)_{i,j}^2 $$
+                        </p>   
+                                        
+                        <p class="fragment fade-down" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                            Problema de optimización:
+                            
+                            $$ \underset{\mathbf{W},\mathbf{H}}{\text{min}} \,\, \text{Error} \quad \text{sujeto a} \quad W \ge 0 \,\,\, \text{y} \,\,\, H \ge 0 $$
+                        </p>     
+                    
+                    <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                        Shahnaz, F., Berry, M. W., Pauca, V. P., and Plemmons, R. J. (2006). Document clustering using nonnegative matrix factorization. Information Processing and Management, 42(2), 373-386.
+                    </p>
+                    
+                    <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                        Heldens, S., Sclocco, A., Dreuning, H., van Werkhoven, B., Hijma, P., Maassen, J., and van Nieuwpoort, R. V. (2022). litstudy: A Python package for literature reviews. SoftwareX, 20, 101207.
+                    </p>                    
+                                        
+                </section>                
+
+<!--
+                <section>
+                  <h4>Modelación de Tópicos - Palabras por Tópico</h4>
+                  <p style="font-size: 22px; text-align: center; margin-bottom: 20px;">
+                    Palabras representativas para cada uno de los 8 tópicos identificados en el análisis bibliométrico.
+                  </p>
+
+                    <table style="width: 100%; font-size: 20px; border-collapse: collapse; border: 1px solid #444;">
+                      <thead>
+                        <tr style="background-color: #999999;">
+                          <th style="border: 1px solid #444; padding: 8px;">Tópico</th>
+                          <th style="border: 1px solid #444; padding: 8px;">Palabras representativas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="border: 1px solid #444; padding: 8px;">1</td>
+                          <td style="border: 1px solid #444; padding: 8px;">solar, source, solar-assisted, water, pump, heat pump, mode, season</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid #444; padding: 8px;">2</td>
+                          <td style="border: 1px solid #444; padding: 8px;">reverse, cycle, outdoor, coil, circuit, unit, melting, indoor, air_source</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid #444; padding: 8px;">3</td>
+                          <td style="border: 1px solid #444; padding: 8px;">consumption, cooling, storage, freeze, energy_consumption, compressor</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid #444; padding: 8px;">4</td>
+                          <td style="border: 1px solid #444; padding: 8px;">gas, hot, bypass, utilization, systems, fluctuation, auxiliary, defrosting</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid #444; padding: 8px;">5</td>
+                          <td style="border: 1px solid #444; padding: 8px;">control, parameters, process, determined, model, optimization, prediction</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid #444; padding: 8px;">6</td>
+                          <td style="border: 1px solid #444; padding: 8px;">PCM, cabinet, thermal, energy, storage, cooling, efficiency</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid #444; padding: 8px;">7</td>
+                          <td style="border: 1px solid #444; padding: 8px;">fin, exchanger, louvered, transfer, pitch, tube, microchannel, flow, rows</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid #444; padding: 8px;">8</td>
+                          <td style="border: 1px solid #444; padding: 8px;">hydrophobic, ultrasonic, surface, hydrophilic, superhydrophobic</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                </section>
+
+                              
+                <section>
+                  <h4>Modelación de Tópicos - Word Cloud</h4>     
+                      <img src = "imagenes/defrost_embedding_3.png" width = "666">
+                </section>
+-->              
+                
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 1: Energías Renovables, Sustentabilidad y Adaptación al Medio Ambiente
+                  </h5>
+
+                  <ul style="font-size: 20px; margin-left: 40px; text-align: left; margin-bottom: 20px;">
+                    <li class="fragment fade-in">Integración de fuentes renovables en sistemas térmicos, buscando eficiencia y sustentabilidad.</li>
+                    <li class="fragment fade-in">Adaptación a condiciones ambientales cambiantes y la mitigación de efectos como la escarcha.</li>
+                    <li class="fragment fade-in">Uso inteligente de la energía solar para reducir el consumo eléctrico y mantener un desempeño estable.</li>
+                  </ul>
+                  <img src = "imagenes/topic1.png" width = "570">
+                </section>
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 1: Energías Renovables, Sustentabilidad y Adaptación al Medio Ambiente
+                  </h5>
+                  
+                  <img src = "imagenes/topic_1/topic_1_1.svg" width = "600">
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Siyuan et al. A solar-air hybrid source heat pump for space heating and domestic hot water. Solar Energy, 199:347–359, 2020.              
+                  </p>                       
+              
+                </section>
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 1: Energías Renovables, Sustentabilidad y Adaptación al Medio Ambiente
+                  </h5>
+                  
+                  <img src = "imagenes/topic_1/topic_1_2.svg" width = "690">
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Besagni et al. Fieldstudy of a novel solar-assisted dual-source multifunctional heat pump. Renewable Energy, 132:1185–1215, 2019.                    
+                  </p>                       
+              
+                </section>              
+                
+                <section>
+                  <h4 style="font-size: 26px;">Tópico 2: Ciclos de Reversa</h4>
+
+                  <ul style="font-size: 20px; text-align: left; margin-left: 40px;">
+                    <li class="fragment">Este tópico se enfoca en los sistemas de bomba de calor que operan en ciclo inverso para realizar procesos de deshielo del evaporador.</li>
+                    <li class="fragment">Se destaca el uso de válvulas de inversión de cuatro vías que permiten modificar la dirección del flujo del refrigerante.</li>
+                    <li class="fragment">Esta estrategia permite cambiar entre modos de calefacción y refrigeración, optimizando el rendimiento térmico en ambientes fríos.</li>
+                  </ul>
+                  <img src = "imagenes/topic2.png" width = "570">
+              </section>
+              
+
+                <section>
+                  <h4 style="font-size: 26px;">Tópico 2: Ciclos de Reversa</h4>     
+         
+                  <img src = "imagenes/topic_2/reverseCycle.png" width = "930">
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Mengjie Song, Shiming Deng, Ning Mao, and Xianming Ye. An experimental study on defrosting performance for an air source heat pump unit with a horizontally installed multi-circuit outdoor coil. Applied Energy, 165:371–382, 2016.  
+                  </p>             
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Mengjie Song, Liang Xia, and Shiming Deng. A modeling study on alleviating uneven defrosting for a vertical three-circuit outdoor coil in an air source heat pump unit during reverse cycle defrosting. Applied Energy, 161:268–278, 2016.                    
+                  </p>     
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Mengjie Song, Gongnan Xie, Libor Pekaˇr, Ning Mao, and Minglu Qu. A modeling study on the revere cycle defrosting of an air source heat pump with the melted frost downwards flowing away and local drainage. Energy and Buildings, 226:110257, 2020.                                 
+                  </p>                       
+                  
+                </section>              
+              
+                    
+
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 3: Consumo Energético y Almacenamiento de Energía
+                  </h5>
+
+                  <ul style="font-size: 20px; margin-left: 40px; text-align: left; margin-bottom: 20px;">
+                    <li class="fragment fade-in">El consumo energético en refrigeración y almacenamiento térmico es clave para la eficiencia operativa.</li>
+                    <li class="fragment fade-in">Se exploran estrategias para reducir consumo, aprovechar calor residual y mejorar aislamiento térmico.</li>
+                    <li class="fragment fade-in">Métodos incluyen materiales PCM, aislamiento VIP y optimización de ciclos de descongelación para aumentar el COP.</li>
+                  </ul>
+                    <img src = "imagenes/topic3.png" width = "570">
+                </section>
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 3: Consumo Energético y Almacenamiento de Energía
+                  </h5>   
+                                    
+                  <img src = "imagenes/topic_3/topic_3_1.png" width = "600">                  
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Karaağaç, M. O., Ergün, A., Gürel, A. E., Ceylan, İ., and Yıldız, G. (2022). Assessment of a novel defrost method for PV/T system assisted sustainable refrigeration system. Energy Conversion and Management, 267, 115943.                                  
+                  </p>                        
+                  
+                </section>
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 3: Consumo Energético y Almacenamiento de Energía
+                  </h5>   
+                  
+                  <img src = "imagenes/topic_3/topic_3_2.png" width = "930">
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Zhang Long, Dong Jiankai, Jiang Yiqiang, and Yao Yang. A novel defrosting method using heat energy dissipated by the compressor of an air source heat pump. Applied Energy, 133:101–111, 2014.                    
+                  </p>               
+                  
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Tiempos de deshielo $\downarrow$ 65%</li>
+                      <li>Consumo de energía para deshielo $\downarrow$ 28%</li>
+                      <li>COP $\uparrow$ 1.4%</li>
+                    </ul>
+                  </div>
+                </section>              
+            
+
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 4: Deshielo de Evaporador Mediante Sistemas Auxiliares
+                  </h5>
+
+                  <ul style="font-size: 20px; margin-left: 40px; text-align: left; margin-bottom: 20px;">
+                    <li class="fragment fade-in">Optimización de sistemas para la gestión y utilización de gases calientes en deshielo.</li>
+                    <li class="fragment fade-in">Integración de estrategias auxiliares para mejorar la descongelación del evaporador y calefacción.</li>
+                    <li class="fragment fade-in">Implementación de bypass de gas caliente combinado con sistemas auxiliares para mayor eficiencia.</li>
+                  </ul>
+                  
+                  <img src = "imagenes/topic4.png" width = "570">
+                </section>
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 4: Deshielo de Evaporador Mediante Sistemas Auxiliares
+                  </h5>   
+                  
+                  <img src = "imagenes/topic_4_1.jpg" width = "600">                  
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Yiming Li, Yuxi Huang, Yufeng Xu, Yuechao Liu, Jianlin Yu, and Suxin Qian. Hot gas bypass defrosting with auxiliary heat source in household refrigerators. Applied Thermal Engineering, 257:124450, 2024.
+                  </p>    
+                  
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Tiempos de deshielo $\downarrow$ 36%</li>
+                      <li>Cinta calefactora eléctrica 80W</li>
+                    </ul>
+                  </div>                                                      
+                </section>             
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 4: Deshielo de Evaporador Mediante Sistemas Auxiliares
+                  </h5>     
+                  <img src = "imagenes/paperWindShield.jpg" width = "600">                                       
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Shipeng Yu, Yi Su, Weihua Cai, and Guodong Qiu. Experimental investigation on an air source heat pump system with a novel anti-frosting evaporator. Applied Thermal Engineering, 221:119910, 2023.                 
+                  </p>    
+                  
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>COP $\uparrow$ 17.3%</li>
+                      <li>Tiempo de calentamiento 180 $\rightarrow$ 330 min</li>
+                    </ul>
+                  </div>                                         
+                </section>                 
+              
+                
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 5: Técnicas de control avanzado y modelado
+                  </h5>
+
+                  <ul style="font-size: 20px; margin-left: 40px; text-align: left; margin-bottom: 20px;">
+                    <li class="fragment fade-in">Estrategias para la gestión precisa de escarcha en sistemas de refrigeración.</li>
+                    <li class="fragment fade-in">Uso de sensores y modelado matemático para mejorar la detección y control.</li>
+                    <li class="fragment fade-in">Aplicación de inteligencia artificial para optimizar la precisión en la descongelación.</li>
+                  </ul>
+                  
+                  <img src = "imagenes/topic5.png" width = "570">
+
+                </section>
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 5: Técnicas de control avanzado y modelado
+                  </h5>        
+                  
+                  <img src = "imagenes/topic_5/frost_layer.png" width = "480">                                       
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Mengjie, S., Shangwen, L., Hosseini, S. H., Xiaoyan, L., and Zhihua, W. (2022). An experimental study on the effect of horizontal cold plate surface temperature on frosting characteristics under natural convection. Applied Thermal Engineering, 211, 118416.
+                  </p>        
+                  
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>$T_s = [-30, -10]$ °C convección natural</li>
+                      <li>Medición de: espesor, rugosidad y velocidad de crecimiento</li>
+                    </ul>
+                  </div>                       
+                  
+                </section>
+
+<!--              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 5: Técnicas de control avanzado y modelado
+                  </h5>     
+                  
+                  <video width="800" autoplay muted loop playsinline>
+                    <source src="imagenes/topic_5/frostLayer.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                  </video>                  
+
+                  <p class="fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Mengjie, S., Shangwen, L., Hosseini, S. H., Xiaoyan, L., and Zhihua, W. (2022). An experimental study on the effect of horizontal cold plate surface temperature on frosting characteristics under natural convection. <i>Applied Thermal Engineering</i>, 211, 118416.
+                  </p>                     
+                </section>
+-->
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 5: Técnicas de control avanzado y modelado
+                  </h5>       
+                  
+                  <img src = "imagenes/frostingMap.jpg" width = "660">                       
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Zhu, J. H., Sun, Y. Y., Wang, W., Deng, S. M., Ge, Y. J., and Li, L. T. (2015). Developing a new frosting map to guide defrosting control for air-source heat pump units. Applied Thermal Engineering, 90, 782-791.                    
+                  </p>                     
+                </section>       
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 5: Técnicas de control avanzado y modelado
+                  </h5>  
+                  
+                  <img src = "imagenes/topic_5/dp.png" width = "840">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Zhu, J., Sun, H., Liu, X., Sun, Z., and Lei, Z. (2022). Theoretical and experimental research on a new defrosting control strategy based on differential pressure sensor. International Journal of Refrigeration, 143, 11-18.             
+                  </p>       
+                  
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Sensor de presión diferencial</li>
+                      <li>Determinar tiempo de inicio de deshielo</li>
+                      <li>Secalcula un factor de pérdida de presión</li>
+                    </ul>
+                  </div>                         
+                </section>     
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 5: Técnicas de control avanzado y modelado
+                  </h5>  
+                  
+                  <img src = "imagenes/topic_5/gray_IA.jpg" width = "930">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Xu, Y., Xie, Y., Wang, X., Shen, X., Song, M., and Hang, W. (2023). Study on a novel defrost control method based on the surface texture of evaporator image with gray-level cooccurrence matrix, new characterization parameter combination and machine learning. Energy and Buildings, 292, 113173.                    
+                  </p>      
+                  
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Matriz de Coocurrencia de Niveles de Gris</li>
+                      <li>Algoritmo de Aprendizaje Automático</li>
+                      <li>Precisión de reconocimiento del 98%</li>
+                    </ul>
+                  </div>   
+                  
+                </section>                   
+
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 6: Materiales de cambio de fase (PCM)
+                  </h5>                  
+
+                  <ul style="font-size: 20px; margin-left: 40px; text-align: left; margin-bottom: 20px;">
+                    <li class="fragment fade-in">Uso de PCM para almacenamiento térmico en sistemas de refrigeración y bombas de calor.</li>
+                    <li class="fragment fade-in">Mejora del rendimiento y estabilidad térmica del sistema con PCM.</li>
+                    <li class="fragment fade-in">Optimización del uso de energía en procesos como descongelación y suministro de calor.</li>
+                  </ul>
+                  <img src = "imagenes/topic6.png" width = "570">
+                </section>
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 6: Materiales de cambio de fase (PCM)
+                  </h5>
+                  <img src = "imagenes/topic_6/topic_6_2.PNG" width = "690">                                                           
+                </section>
+              
+              
+
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 8: Propiedades superficiales y vibraciones
+                  </h5>
+
+                  <ul style="font-size: 20px; margin-left: 40px; text-align: left; margin-bottom: 20px;">
+                    <li class="fragment fade-in">La humectabilidad define cómo un líquido se distribuye sobre una superficie sólida.</li>
+                    <li class="fragment fade-in">Se mide mediante el ángulo de contacto entre la superficie y la gota de líquido.</li>
+                    <li class="fragment fade-in">Las propiedades superficiales afectan fenómenos como la adhesión y el comportamiento vibracional.</li>
+                  </ul>
+                  <img src = "imagenes/topic8.png" width = "570">
+                </section>
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 8: Propiedades superficiales y vibraciones
+                  </h5>            
+                  
+                  <img src = "imagenes/topic_8_surfaces.PNG" width = "720">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Jaafar, H. T., and Aldabbagh, B. M. D. (2019). Investigation of superhydrophobic/hydrophobic materials properties using electrospinning technique. Baghdad Science Journal, 16(3), 632-638.                    
+                  </p>                         
+
+                </section>         
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 8: Propiedades superficiales y vibraciones
+                  </h5>                        
+                                    
+                  <img src = "imagenes/topic_8_3_1.jpg" width = "720">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Huang, L., Liu, Z., Liu, Y., and Gou, Y. (2011). Preparation and anti-frosting performance of super-hydrophobic surface based on copper foil. International Journal of Thermal Sciences, 50(4), 432-439.
+                  </p>   
+                  
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Recubrimiento de fluoroalquilsilano</li>
+                      <li>Demora más en congelarse</li>
+                      <li>Demora menos en descongelarse</li>
+                    </ul>
+                  </div>                     
+
+                </section>                                                                   
+              
+
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5>                                    
+
+                  <ul style="font-size: 20px; margin-left: 40px; text-align: left; margin-bottom: 20px;">
+                    <li class="fragment fade-in">Optimización geométrica de aletas para mejorar la transferencia de calor y reducir escarcha.</li>
+                    <li class="fragment fade-in">Diversos diseños propuestos: aletas planas, onduladas y de rejilla para mejor desempeño térmico e hidráulico.</li>
+                    <li class="fragment fade-in">Parámetros críticos como tipo, espaciamiento y perforaciones influyen en la eficiencia del sistema.</li>
+                  </ul>
+                  <img src = "imagenes/topic7.png" width = "570">
+                </section>
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5> 
+                  
+                  <img src = "imagenes/topic_7/topic_7_1.jpg" width = "540">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Wu, G., Yu, B., Ren, T., and Ding, G. (2020). Modeling and experimental investigation on comprehensive performance of perforated wavy fins for heat pump type air conditioners at frosting and non-frosting conditions. Energy and Buildings, 225, 110342.                    
+                  </p>  
+                  
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Capacidad de transferencia de calor (escarchado) $\uparrow$ 4.1%</li>
+                      <li>Capacidad de transferencia de calor (no escarchado) $\uparrow$ 8.9%</li>
+                      <li>Respecto a una aleta convencional</li>
+                    </ul>
+                  </div>        
+                  
+                </section>
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5> 
+                  
+                  <img src = "imagenes/topic_7/wavy1.png" width = "666">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Wu, G., Yu, B., Ren, T., and Ding, G. (2020). Modeling and experimental investigation on comprehensive performance of perforated wavy fins for heat pump type air conditioners at frosting and non-frosting conditions. Energy and Buildings, 225, 110342.                    
+                  </p>                                              
+                </section>             
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5> 
+                  
+                  <img src = "imagenes/topic_7/wavy2.png" width = "720">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Wu, G., Yu, B., Ren, T., and Ding, G. (2020). Modeling and experimental investigation on comprehensive performance of perforated wavy fins for heat pump type air conditioners at frosting and non-frosting conditions. Energy and Buildings, 225, 110342.                    
+                  </p>                                              
+                </section>     
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5> 
+                  
+                  <img src = "imagenes/paper_aletas_3.PNG" width = "450">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Wu, G., Yu, B., Ren, T., and Ding, G. (2020). Modeling and experimental investigation on comprehensive performance of perforated wavy fins for heat pump type air conditioners at frosting and non-frosting conditions. Energy and Buildings, 225, 110342.                    
+                  </p>                                         
+                </section>     
+              
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5> 
+                  
+                  <img src = "imagenes/aletas_2_lalpha.jpg" width = "500">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Zhou, Q., Wang, H., Liu, S., Wei, H., and Hu, G. (2024). Assessment of the heat transfer efficiency of perforated louvered fins for improved drainage. International Journal of Heat and Mass Transfer, 228, 125654.                    
+                  </p>                                         
+                </section>      
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5> 
+
+                   <table class="fragment" style="font-size: 16px; border-collapse: collapse; margin-top: 20px; margin-left: auto; margin-right: auto; text-align: center;">
+                      <thead>
+                        <tr>
+                          <th style="padding: 4px 8px;">Geometries</th>
+                          <th style="padding: 4px 8px;">Fp<br>(mm)</th>
+                          <th style="padding: 4px 8px;">Lp<br>(mm)</th>
+                          <th style="padding: 4px 8px;">Fd<br>(mm)</th>
+                          <th style="padding: 4px 8px;">Fh<br>(mm)</th>
+                          <th style="padding: 4px 8px;">Lh<br>(mm)</th>
+                          <th style="padding: 4px 8px;">δf<br>(mm)</th>
+                          <th style="padding: 4px 8px;">Ltr<br>(mm)</th>
+                          <th style="padding: 4px 8px;">Lα<br>(°)</th>
+                          <th style="padding: 4px 8px;">R<br>(mm)</th>
+                          <th style="padding: 4px 8px;">Lr<br>(mm)</th>
+                          <th style="padding: 4px 8px;">S<br>(mm)</th>
+                          <th style="padding: 4px 8px;">Nh</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Conventional</td><td>1.4</td><td>1.3</td><td>32</td><td>8</td><td>6.8</td><td>0.1</td><td>0.42</td><td>30</td><td>–</td><td>–</td><td>2.000</td><td>0</td></tr>
+                        <tr><td>1H-D4.5-Lα30</td><td>1.4</td><td>1.3</td><td>32</td><td>8</td><td>6.8</td><td>0.1</td><td>0.42</td><td>30</td><td>2.25</td><td>–</td><td>2.325</td><td>1</td></tr>
+                        <tr><td>1H-D6.5-Lα30</td><td>1.4</td><td>1.3</td><td>32</td><td>8</td><td>6.8</td><td>0.1</td><td>0.42</td><td>30</td><td>2.75</td><td>1.92</td><td>1.595</td><td>1</td></tr>
+                        <tr><td>2H-D6.5-Lα30</td><td>1.4</td><td>1.3</td><td>32</td><td>8</td><td>6.8</td><td>0.1</td><td>0.42</td><td>30</td><td>2.75</td><td>1.92</td><td>1.352</td><td>2</td></tr>
+                        <tr><td>2H-D6.5-Lα12</td><td>1.4</td><td>1.3</td><td>32</td><td>8</td><td>6.8</td><td>0.1</td><td>0.42</td><td>12</td><td>2.75</td><td>1.92</td><td>1.352</td><td>2</td></tr>
+                        <tr><td>2H-D6.5-Lα18</td><td>1.4</td><td>1.3</td><td>32</td><td>8</td><td>6.8</td><td>0.1</td><td>0.42</td><td>18</td><td>2.75</td><td>1.92</td><td>1.352</td><td>2</td></tr>
+                        <tr><td>2H-D6.5-Lα24</td><td>1.4</td><td>1.3</td><td>32</td><td>8</td><td>6.8</td><td>0.1</td><td>0.42</td><td>24</td><td>2.75</td><td>1.92</td><td>1.352</td><td>2</td></tr>
+                        <tr><td>2H-D6.5-Lα36</td><td>1.4</td><td>1.3</td><td>32</td><td>8</td><td>6.8</td><td>0.1</td><td>0.42</td><td>36</td><td>2.75</td><td>1.92</td><td>1.352</td><td>2</td></tr>
+                      </tbody>
+                    </table>
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Zhou, Q., Wang, H., Liu, S., Wei, H., and Hu, G. (2024). Assessment of the heat transfer efficiency of perforated louvered fins for improved drainage. International Journal of Heat and Mass Transfer, 228, 125654.                    
+                  </p>                                         
+                </section>      
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5> 
+                  
+                  <img src = "imagenes/topic_7/louvered_1.png" width = "930">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Zhou, Q., Wang, H., Liu, S., Wei, H., and Hu, G. (2024). Assessment of the heat transfer efficiency of perforated louvered fins for improved drainage. International Journal of Heat and Mass Transfer, 228, 125654.                    
+                  </p>                                         
+                </section>          
+                                        
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5> 
+                  
+                  <img src = "imagenes/topic_7/aletas_vortex.png" width = "600">                    
+                  
+                  <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                    Sommers, A. D., and Jacobi, A. M. (2005). Air-side heat transfer enhancement of a refrigerator evaporator using vortex generation. International journal of refrigeration, 28(7), 1006-1017.
+                  </p>                                         
+                </section>  
+              
+                <section>
+                  <h5 style="font-size: 26px; margin-bottom: 10px;">
+                    Tópico 7: Diseño de aletas
+                  </h5> 
+                  
+                  <img src = "imagenes/topic_7/vortex_3.png" width = "570">                    
+                                                         
+                </section>                
+              
+
+<!-- 
+Tópico 1: Energías Renovables, Sustentabilidad y Adaptación al Medio Ambiente             
+Tópico 2: Ciclos de reversa
+Tópico 3: Consumo Energético y Almacenamiento de Energía
+Tópico 4: Deshielo de Evaporador Mediante Sistemas Auxiliares y Bypass de Gas Caliente
+Tópico 5: Técnicas de control avanzado y modelado
+Tópico 6: Materiales de cambio de fase (PCM)
+Tópico 7: Diseño de aletas
+Tópico 8: Propiedades superficiales y vibraciones
+-->                                                                            
+                <section>
+                  <h4>Conclusión Final</h4>
+
+                  <div style="font-size: 20px; text-align: left;">
+                    <div class="fragment fade-in">
+                      <ul>
+                        <li>No existe una <strong>estrategia dominante</strong> para el deshielo de evaporadores.</li>
+                        <li>Los <strong>artículos más citados</strong> son revisiones.</li>
+                        <li>Existe <strong>espacio libre para innovar</strong> y explorar enfoques híbridos.</li>
+                        <li>Se requiere mayor <strong>colaboración internacional</strong> y una integración metodológica más sólida.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                                                                                     
+            </section>
+                
+                
+                
+            <section data-name = "Propuesta" >
+                                                                                                                                            
+              <section>
+                <h4>Diseño en Ingeniería - Geometría Fractal</h4>
+
+                <div class="twocolumn" style="display: flex; gap: 40px; align-items: flex-start;">
+
+                  <!-- Columna izquierda: conceptos -->
+                  <div style="flex: 1; font-size: 20px; text-align: left;">
+                    <div class="fragment fade-in">
+                      <ul style="padding-left: 20px;">
+                        <li><strong>Cambio de paradigma:</strong> Geometría Euclidiana → Geometría Fractal</li>
+                        <li><strong>Recursividad y Autosimilitud</strong></li>
+                        <li><strong>Aumento o reducción de turbulencia</strong></li>
+                        <li><strong>Mejora en transferencia de masa y calor</strong></li>
+                      </ul>
+                    </div>
+                    <div class="fragment fade-in" style="text-align: left;">
+                      <p><strong>Transferencia de calor:</strong></p>
+                      <p><em>Conducción (Ley de Fourier):</em></p>
+                      <p style="font-size: 22px; text-align: left;">\[\dot{Q}_{\text{cond}} = -k A \frac{dT}{dx}\]</p>
+
+                      <p><em>Convección (Ley de Newton):</em></p>
+                      <p style="font-size: 22px; text-align: left;">\[\dot{Q}_{\text{conv}} = h A (T_s - T_\infty)\]</p>
+                    </div>
+                  </div>
+
+                  <!-- Columna derecha: ecuaciones -->
+                  <div style="flex: 1; font-size: 20px; text-align: left;">
+                    <div class="fragment fade-in" style="margin-top: 30px; text-align: left;">
+                      <p><strong>Transferencia de masa:</strong></p>
+                      <p><em>Difusión (Ley de Fick):</em></p>
+                      <p style="font-size: 22px; text-align: left;">\[\dot{N}_{i,\text{dif}} = -D_i A \frac{dC_i}{dx}\]</p>
+
+                      <p><em>Convección de masa:</em></p>
+                      <p style="font-size: 22px; text-align: left;">\[\dot{N}_{i,\text{conv}} = h_m A (C_{i,s} - C_{i,\infty})\]</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Referencia -->
+                <div style="font-size: 15px; margin-top: 30px; text-align: left;">
+                  <p>Bergman, T. L. (2011). <em>Fundamentals of heat and mass transfer</em>. John Wiley and Sons.</p>
+                </div>
+              </section>
+
+              
+<!--              
+              <section>
+                  <p class="fragment fade-left" style="font-size: 23px; text-align: justify; text-align-last: left;">
+                      <strong>No es Fractal</strong>: Cuando se magnifica, no se revelan nuevas características.
+                  </p>
+                  <p class="fragment fade-in">
+                      <img src="imagenes/noFractal.svg" width="500">
+                  </p>
+                  <p class="fragment fade-right" style="font-size: 23px; text-align: justify; text-align-last: left;">
+                      <strong>Si es Fractal</strong>: Cuando se magnifica, no se revelan nuevas características cada vez más finas.<br>
+                      Las formas de las características más pequeñas son similares a las características más grandes.
+                  </p>   
+                  <p class="fragment fade-in">
+                      <img src="imagenes/siFractal.svg" width="500">
+                  </p>
+
+              </section>
+-->
+                            
+<!--
+              <section>
+                <p>
+                  <strong>Sistemas y eventos naturales</strong>
+                </p>
+                <ul class="fragment" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                  <li>Exhiben propiedades fractales</li>
+                  <li>Sistemas complejos y caóticos</li>
+                </ul>     
+                <img src="imagenes/sistemasNaturales.png" width="666"> 
+                <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 70%; transform: translate(-50%, -50%); font-size: 20px; text-align: justify;">
+                  Las nubes no son esferas,  
+                  ni las montañas conos perfectos;  
+                  las costas no dibujan círculos,  
+                  la corteza de los árboles no es lisa,  
+                  y los relámpagos no conocen la línea recta.  
+                  <br><br>
+                  <span style="float: right; font-size: 18px;"><em>— Benoît Mandelbrot</em></span>
+                </div>                      
+              </section>
+
+
+                                
+              <section>
+                  <h3>
+                      Lindenmayer System <br>(L-System)
+                  </h3>    
+
+                  <p class="fragment fade-in-then-semi-out" style="font-size: 25px; text-align: justify; text-align-last: left;">
+                      Sistema de gramática que consta de:
+                  </p>
+                      <ul class="fragment fade-in-then-semi-out" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                          <li>Alfabeto de símbolos para formar cadenas de texto.</li>
+                          <li>Reglas de producción que expanden cada símbolo en una cadena más grande.</li>
+                          <li>Cadena ”axioma” inicial a partir de la cual comenzar la construcción.</li>
+                      </ul>            
+                  <p class="fragment fade-in-then-semi-out" style="font-size: 25px; text-align: justify; text-align-last: left;">
+                      Desarrollados en 1968 por Aristid Lindenmayer, biólogo teórico y botánico húngaro de la Universidad de Utrecht.
+                  </p>
+                      <ul class="fragment fade-in-then-semi-out" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                          <li>Se han utilizado para modelar la morfología de una variedad de organismos.</li>
+                          <li>Pueden usarse para generar fractales autosemejantes.</li>
+                      </ul>
+              </section>
+
+              <section>
+                  <h4>
+                      Lindenmayer System (L-System): Turtle
+                  </h4>   
+
+                      <div class="twocolumn">
+                          <div>
+                              <img src="imagenes/python-svgrepo-com.svg" width="796">  
+                          </div>
+                          <div>                        
+                              <img src="imagenes/python-turtle-square-spiral.gif" width="666">
+                          </div>                                                                
+                      </div>
+
+              </section>     
+              
+-->
+
+<!--
+              <section>
+                      <div class="twocolumn">
+                          <div>
+                              <p class="fragment fade-in" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                                  Ejemplo:
+
+                                  \[G= \left(V, \omega, P\right)\]
+
+                                  \[\omega: F+F+F+F\]
+
+                                  \[P: F \rightarrow F+F-F-FF+F+F-F\]
+                              </p>         
+
+                              <p class="fragment fade-in-then-semi-out" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                                  Una iteración:<br>
+                                  \[
+                                  \begin{align*}
+                                  F+F-F-FF+F+F-F+\\
+                                  F+F-F-FF+F+F-F+\\
+                                  F+F-F-FF+F+F-F+\\
+                                  F+F-F-FF+F+F-F
+                                  \end{align*}
+                                  \]
+                              </p>
+                          </div>
+                          <div>
+                              <video width="500" controls autoplay muted onended="this.currentTime=0; this.play()";>
+                                  <source src="videos/L-system1.mp4" type="video/mp4">
+                                  Tu navegador no soporta el tag de video.
+                              </video>
+                          </div>
+                      </div>
+              </section>
+-->
+              
+
+              <section>
+                      <div class="twocolumn">
+                          <div>
+                              <p class="fragment fade-in" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                                  Ejemplo:
+
+                                  \[G= \left(V, \omega, P\right)\]
+
+                                  \[\omega: F+F+F+F\]
+
+                                  \[P: F \rightarrow F+F-F-FF+F+F-F\]
+                              </p>         
+
+                              <p class="fragment fade-in" style="font-size: 12px; text-align: justify; text-align-last: left;">
+                                  Dos iteraciones:<br>
+                                    \[
+                                    \begin{aligned}
+                                    \texttt{F+ F-F-FF+ F+ F-F+ F+ F-F-FF+ F+ F-F-F+ F-F-FF+} \\
+                                    \texttt{F+ F-F-F+ F-F-FF+ F+ F-FF+ F-F-FF+ F+ F-F+ F+ F-F-FF+} \\
+                                    \texttt{F+ F-F+ F+ F-F-FF+ F+ F-F-F+ F-F-F+ F+ F-F+ F+ F-F-FF+} \\
+                                    \texttt{F+ F-F-F+ F-F-FF+ F+ F-FF+ F-F-FF+ F+ F-F+ F+ F-F-FF+} \\
+                                    \texttt{F+ F-F+ F+ F-F-FF+ F+ F-F-F+ F-F-FF+ F+ F-F+ F+ F-F-FF+} \\
+                                    \texttt{F+ F-F-F+ F-F-FF+ F+ F-F+ F+ F-F-FF+ F+ F-F+ F+ F-F-FF+} \\
+                                    \texttt{F+ F-F-F+ F-F-FF+ F+ F-FF+ F-F-FF+ F+ F-F+ F+ F-F-FF+} \\
+                                    \texttt{F+ F-F-F+ F-F-FF+ F+ F-F+ F+ F-F-FF+ F+ F-F}
+                                    \end{aligned}
+                                    \]
+                              </p>
+                          </div>
+                          <div>
+                              <video width="500" controls autoplay muted onended="this.currentTime=0; this.play()">
+                                  <source src="videos/L-system2.mp4" type="video/mp4">
+                                  Tu navegador no soporta el tag de video.
+                              </video>
+                          </div>
+                      </div>
+              </section>
+
+              <section>
+                  <img src="imagenes/Lsystem_iters.svg" width="999"> 
+              </section>
+
+               <section>
+                  <img src="imagenes/Lsystem-details.svg" width="999"> 
+              </section>      
+
+
+              <section>
+                  <img src="imagenes/f1.svg" width="633"> 
+              </section>      
+
+              <section>
+                  <img src="imagenes/f2.svg" width="633"> 
+              </section>    
+              <section>
+                  <img src="imagenes/f3.svg" width="999"> 
+              </section>    
+              <section>
+                  <img src="imagenes/f4.svg" width="999"> 
+              </section>  
+              <section>
+                  <img src="imagenes/f5.svg" width="999"> 
+              </section>  
+              
+<!--              
+              <section>
+                  <img src="imagenes/f6.svg" width="999"> 
+              </section>  
+              <section>
+                  <img src="imagenes/f7.svg" width="999"> 
+              </section>  
+              <section>
+                  <img src="imagenes/f8.svg" width="633"> 
+              </section>  
+              <section>
+                  <img src="imagenes/f9.svg" width="999"> 
+              </section>                                      
+
+              <section data-background-video="videos/mosaicoGT.mp4" data-background-color="#000000">
+                  <div style="background-color: rgba(0, 0, 0, 1.); color: #fff; padding: 6px;">
+                  </div>
+              </section>
+
+-->
+
+<!--
+              <section data-background-video="videos/d3_v1_0001-1400_.mp4" data-background-color="#000000">
+                  <div style="background-color: rgba(0, 0, 0, 1.); color: #fff; padding: 6px;">
+                  </div>
+              </section>        
+-->
+
+              <section>
+                  <h6>Diseño de aletas fractales</h6>
+
+                  <div class="twocolumn">
+                      <div>
+
+                          <ul class="fragment fade-in-then-semi-out" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                              <li>Geometría Euclidiana $\rightarrow$ <strong>Geometría fractal</strong></li>
+                              <li>Diseños con algoritmo L-System</li>
+                              <li>Aumento del número de iteraciones $\rightarrow$ $\uparrow$ área de transferencia de calor</li>
+                              <li>Convección natural y forzada</li>
+                          </ul>     
+
+                          <img src="imagenes/evaporator_ok.png" width="444">
+
+                      </div>
+
+                      <div>
+                          <img src="imagenes/euclidiana-fractal.svg" width="666"> 
+
+                      </div>
+                  </div>
+              </section>
+
+
+              <section>
+                  <h6>Diseño de aletas fractales</h6>
+                      <img src="imagenes/fin_design_h.svg" width="999"> 
+
+              </section>
+
+              <section>
+                  <h6>Diseño de aletas fractales</h6>
+                      <img src="imagenes/fin-design_vertical.svg" width="699"> 
+
+              </section>      
+              
+
+              <section data-transition="convex">
+                  <p style="font-size: 21px;">
+                      Hong, Y., Bai, D., Shi, Y., Zhao, L., Jiao, F., and Du, J. (2024). Experimental study of phase change material heat sinks coupled with Cantor fractal fins for thermal management of photovoltaic systems. Applied Thermal Engineering, 243, 122474.
+                  </p>       
+                  <img src="imagenes/literatura/aletas_cantor/fig2.PNG" width="800">
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Aleta forma fractal tipo Cantor</li>
+                      <li>Gestión térmica de panel solar</li>
+                      <li>PCM ácido láurico</li>
+                    </ul>
+                  </div>        
+                   <!--The results indicated that the employment of fins alleviated the temperature stratification phenomenon of the PCM. Meanwhile, the fins reduced the melting time by up to 14.9 % and improved the thermal performance of the PV panel with a maximum temperature drop of 13.1 ◦C. El mejor S-s = 3--> 
+              </section>
+
+
+              <section data-transition="convex">
+
+                  <img src="imagenes/literatura/aletas_cantor/fig3.PNG" width="400">
+
+              </section>
+
+              <section data-transition="convex">
+
+                  <img src="imagenes/literatura/aletas_cantor/fig4.PNG" width="600">
+
+              </section>
+
+              <section data-transition="convex">
+                  <div class="twocolumn">
+                      <div>
+                          <img src="imagenes/literatura/aletas_cantor/fig5.PNG" width="500">
+                      </div>
+                      <div>
+                          <img src="imagenes/literatura/aletas_cantor/fig6.PNG" width="500">
+                      </div>
+                  </div>
+              </section>
+
+              <section data-transition="convex">
+                  <div class="twocolumn">
+                      <div>
+                          <ul style="font-size: 27px;">
+                            <li>Aletas decrecen la estratificación de temperatura del PCM</li>
+                            <li>Reduce el tiempo de fusión en un 15%</li>
+                            <li>Mejora eficiencia del panel, reduciendo la temperatura en 13°C</li>                    
+                            <li>Mejor opción S-s = 3</li>
+                          </ul>
+                      </div>
+                      <div>
+                          <img src="imagenes/literatura/aletas_cantor/fig7.PNG" width="600">
+                      </div>
+                  </div>
+              </section>
+
+            
+              <section data-transition="convex">
+                  <p style="font-size: 21px;">
+                      Gu, D., and Li, C. (2024). Mixing characteristics of high-viscosity fluids with laminar flow in a stirred tank with a fractal arranged perforated impeller. Chemical Engineering and Processing-Process Intensification, 109706.
+                  </p>       
+
+                  <img src = "imagenes/literatura/impulsor_fractal/fig1.PNG" width="500">
+              </section>          
+
+              <section data-transition="convex">
+
+                  <ul style="font-size: 21px;">
+                    <li>Se utilizó la solución de carboximetilcelulosa</li>
+                    <li>Propiedades reológicas - modelo Ley de Potencia</li>
+                  </ul>                      
+                  <img src = "imagenes/literatura/impulsor_fractal/fig2.PNG" width="900">
+
+              </section>  
+
+
+              <section data-transition="convex">
+
+                  <div class="twocolumn">
+                      <div>
+                          <img src = "imagenes/literatura/impulsor_fractal/fig3.PNG" width="400">
+                      </div>
+                      <div>
+                          <img src = "imagenes/literatura/impulsor_fractal/fig6.PNG" width="400">
+                      </div>
+                  </div>  
+                  <div class="fragment highlight-box" style="position: absolute; top: 60%; left: 50%; width: 70%; transform: translate(-50%, -50%); font-size: 20px;">
+                    <p><em>Número de potencia</em>: caracteriza el rendimiento del impulsor.</p>
+                    <p style="text-align: center;">\( N_p = \frac{P}{\rho N^3 D^5} \)</p>
+
+                    <p><em>Número de eficiencia de mezcla</em> relaciona el tiempo de mezcla, la viscosidad aparente y la potencia por volumen.</p>
+                    <p style="text-align: center;">\(C_e = \frac{P_v t_m^2}{\mu_a} \)</p>
+                  </div>                             
+              </section>         
+
+              <section data-transition="convex">
+                  <img src = "imagenes/literatura/impulsor_fractal/fig4.PNG" width="1000">
+              </section>      
+
+               <section data-transition="convex">
+                  <img src = "imagenes/literatura/impulsor_fractal/fig5.PNG" width="900">
+              </section> 
+
+
+               <section data-transition="convex">
+                  <p style="font-size: 21px;">
+                      Gu, D., Li, C., Gu, X., and Wang, J. (2024). Solid-liquid mixing characteristics in a fractal cut impeller stirred reactor with dense solid loading. Chemical Engineering and Processing-Process Intensification, 196, 109655.
+                  </p>     
+                  <img src = "imagenes/literatura/impulsor_fractal/fig8.PNG" width="850">
+                  <img src = "imagenes/literatura/impulsor_fractal/fig7.PNG" width="850">
+              </section> 
+
+<!--****************************************************************************** -->                      
+
+               <section data-transition="convex">
+                  <p style="font-size: 21px;">
+                      Gu, D., Ye, M., Wang, X., and Liu, Z. (2020). Numerical investigation on mixing characteristics of floating and sinking particles in a stirred tank with fractal impellers. Journal of the Taiwan Institute of Chemical Engineers, 116, 51-61.
+                  </p>     
+                  <img src = "imagenes/literatura/impulsor_Lsystem/fig1.PNG" width="400">
+               </section> 
+
+               <section data-transition="convex">
+                  <img src = "imagenes/literatura/impulsor_Lsystem/fig2.PNG" width="800">
+                   <img src = "imagenes/literatura/impulsor_Lsystem/fig3.PNG" width="800">
+               </section>               
+
+               <section data-transition="convex">
+                  <img src = "imagenes/literatura/impulsor_Lsystem/fig4.PNG" width="1000">
+               </section>      
+               <section data-transition="convex">
+                  <img src = "imagenes/literatura/impulsor_Lsystem/fig5.PNG" width="1000">
+               </section>   
+               <section data-transition="convex">
+                  <img src = "imagenes/literatura/impulsor_Lsystem/fig6.PNG" width="1000">
+               </section>     
+               <section data-transition="convex">
+                  <img src = "imagenes/literatura/impulsor_Lsystem/fig7.PNG" width="1000">
+               </section>   
+
+<!--****************************************************************************** --> 
+
+               <section data-transition="convex">
+                  <p style="font-size: 21px;">
+                      Huang, Y. X., Jang, J. Y., and Cheng, C. H. (2014). Fractal channel design in a micro methanol steam reformer. International journal of hydrogen energy, 39(5), 1998-2007.
+                  </p>     
+                  <img src = "imagenes/literatura/metanolSteamReforming2/fig1.PNG" width="600">
+                  <div class="fragment highlight-box" style="position: absolute; top: 50%; left: 50%; width: 60%; transform: translate(-50%, -50%);">
+                    <ul style="margin: 0; padding-left: 20px;">
+                      <li>Reformado de metanol con vapor $\rightarrow$ producción de hidrógeno</li>
+                      <li>\(\text{CH₃OH} + \text{H₂O} \rightarrow 3\text{H₂} + \text{CO₂}\)</li>
+                      <li>Superficie recubierta con material catalítico: cobre, óxidos de zinc, o óxidos de alúmina</li>
+                    </ul>
+                  </div>     
+               </section>       
+
+               <section data-transition="convex">   
+                  <img src = "imagenes/literatura/metanolSteamReforming2/fig2.PNG" width="600">
+               </section>       
+
+              <section data-transition="convex">
+                  <div class="twocolumn">
+                      <div>
+                          <img src = "imagenes/literatura/metanolSteamReforming2/fig3.PNG" width="500">
+                      </div>
+                      <div>
+                          <img src = "imagenes/literatura/metanolSteamReforming2/fig4.PNG" width="500">
+                      </div>
+                  </div>    
+              </section>  
+              
+               <section data-transition="convex">   
+                  <img src = "imagenes/literatura/metanolSteamReforming2/fig7.PNG" width="1000">
+               </section>    
+<!--
+               <section data-transition="convex">   
+                  <img src = "imagenes/literatura/metanolSteamReforming2/fig5.PNG" width="1000">
+               </section>       
+               <section data-transition="convex">   
+                  <img src = "imagenes/literatura/metanolSteamReforming2/fig6.PNG" width="1000">
+               </section>    
+               <section data-transition="convex">   
+                  <img src = "imagenes/literatura/metanolSteamReforming2/fig8.PNG" width="1000">
+               </section>    
+-->
+              <section data-transition="convex">
+                  <div class="twocolumn">
+                      <div>
+                          <img src = "imagenes/literatura/metanolSteamReforming2/fig9.PNG" width="600">
+                      </div>
+                      <div>
+                          <img src = "imagenes/literatura/metanolSteamReforming2/fig10.PNG" width="600">
+                      </div>
+                  </div>    
+              </section>      
+              
+               <section data-transition="convex">
+                  <p style="font-size: 21px;">
+                      Yin, B., Chen, Z., Xu, S., Zhang, S., and Dong, F. (2022). Effects of fractal network channel on heat and mass transfer in methanol steam reforming. International Journal of Hydrogen Energy, 47(82), 34810-34824.
+                  </p>     
+                  <img src = "imagenes/literatura/metanolSteamReforming/graficalAbstract.jpg" width="800">
+               </section>              
+
+<!--
+                <section data-transition="convex">
+                  <p style="font-size: 21px; text-align: justify; text-align-last: left;">
+                      El reformado de metanol con vapor es un proceso químico utilizado para producir hidrógeno (H₂) a partir de metanol (CH₃OH) y vapor de agua (H₂O). Este método es una de las opciones más eficientes y prácticas para generar hidrógeno, especialmente para aplicaciones portátiles como las celdas de combustible de membrana de intercambio de protones (PEMFC, por sus siglas en inglés).
+                  </p>     
+                  <img src = "imagenes/literatura/metanolSteamReforming/fg1.PNG" width="800">
+               </section>        
+
+                <section data-transition="convex">
+                  <ul style="font-size: 21px; text-align: justify; text-align-last: left;">
+                      <li>Length branch ratio $\alpha$</li>
+                      <li>Width branch ratio $\beta$</li>
+                      <li>Maximum of branch grades $m$</li>
+                      <li>$l_k = l_0 \alpha^k$</li>
+                      <li>$w_k = w_0 \beta^k$</li>
+                  </ul>     
+
+                  <img src = "imagenes/literatura/metanolSteamReforming/fg1.PNG" width="900">
+               </section>     
+
+                <section data-transition="convex">
+                  <img src = "imagenes/literatura/metanolSteamReforming/cb.PNG" width="600">
+                  <img src = "imagenes/literatura/metanolSteamReforming/doe.PNG" width="900">
+               </section>    
+
+                <section data-transition="convex">
+                  <img src = "imagenes/literatura/metanolSteamReforming/reaction.PNG" width="800">
+               </section>    
+
+                <section data-transition="convex">
+                  <img src = "imagenes/literatura/metanolSteamReforming/fg2.PNG" width="1000">
+               </section>    
+
+                <section data-transition="convex">
+                  <img src = "imagenes/literatura/metanolSteamReforming/fg3.PNG" width="1000">
+               </section>    
+                <section data-transition="convex">
+                  <img src = "imagenes/literatura/metanolSteamReforming/fg4.PNG" width="1000">
+               </section>    
+                <section data-transition="convex">
+                  <img src = "imagenes/literatura/metanolSteamReforming/fg5.PNG" width="1000">
+               </section>   
+-->
+              
+                                                                                                                                                                                                                  
+              <section>
+                <h4>Preguntas de Investigación</h4>
+
+                <!-- Pregunta 1 -->
+                <p style="font-size: 24px; text-align: justify; text-align-last: left;">
+                  <strong>
+                    ¿Cómo influye el 
+                    <span class="fragment highlight-red">diseño geométrico de aletas fractales</span> 
+                    en el 
+                    <span class="fragment highlight-green">tiempo de deshielo</span> 
+                    y en la 
+                    <span class="fragment highlight-blue">estabilidad térmica</span> 
+                    de un sistema de enfriamiento?
+                  </strong>
+                </p>
+
+                <!-- Pregunta 2 -->
+                <p style="font-size: 24px; text-align: justify; text-align-last: left;">
+                  <strong>
+                    ¿Qué efecto tiene el 
+                    <span class="fragment highlight-blue">número de iteraciones fractales</span> 
+                    sobre el 
+                    <span class="fragment highlight-green">comportamiento térmico</span> 
+                    de las aletas, considerando 
+                    <span class="fragment highlight-red">limitaciones prácticas de fabricación y resistencia estructural</span>?
+                  </strong>
+                </p>
+
+                <!-- Pregunta 3 -->
+                <p style="font-size: 24px; text-align: justify; text-align-last: left;">
+                  <strong>
+                    ¿Cómo se ve afectado el 
+                    <span class="fragment highlight-green">rendimiento térmico</span> 
+                    del sistema según la 
+                    <span class="fragment highlight-red">orientación de las aletas</span> 
+                    respecto a la 
+                    <span class="fragment highlight-blue">dirección del flujo de aire</span>?
+                  </strong>
+                </p>
+
+              </section>                                
+              
+              
+              <section>
+                <h4>Preguntas de Investigación</h4>
+   
+                <!-- Pregunta 4 -->
+                <p style="font-size: 24px; text-align: justify; text-align-last: left;">
+                  <strong>
+                    ¿De qué manera impactan la 
+                    <span class="fragment highlight-blue">velocidad del viento</span> 
+                    y la 
+                    <span class="fragment highlight-green">humedad relativa</span> 
+                    en el 
+                    <span class="fragment highlight-red">desempeño térmico de aletas fractales</span> 
+                    frente a aletas convencionales?
+                  </strong>
+                </p>
+
+                <!-- Pregunta 5 -->
+                <p style="font-size: 24px; text-align: justify; text-align-last: left;">
+                  <strong>
+                    ¿Puede justificarse el uso de 
+                    <span class="fragment highlight-red">aletas fractales</span> 
+                    como una alternativa 
+                    <span class="fragment highlight-green">eficiente</span> 
+                    y 
+                    <span class="fragment highlight-blue">sostenible</span> 
+                    en sistemas de refrigeración de la cadena de frío?
+                  </strong>
+                </p>
+              </section>    
+              
+              
+              <section>
+                <h4>Preguntas de Investigación</h4>
+
+                <!-- Pregunta 1 -->
+                <p style="font-size: 24px; text-align: justify; text-align-last: left;">
+                  <strong>
+                    ¿Cómo varía la 
+                    <span class="fragment highlight-green">estabilidad térmica</span> 
+                    dentro del compartimento refrigerado entre el sistema con 
+                    <span class="fragment highlight-red">aletas convencionales</span> 
+                    y el sistema con 
+                    <span class="fragment highlight-red">aletas fractales</span>, 
+                    y qué efecto tiene esta variación sobre la 
+                    <span class="fragment highlight-blue">calidad de los alimentos almacenados</span>?
+                  </strong>
+                </p>
+
+                <!-- Pregunta 2 -->
+                <p style="font-size: 24px; text-align: justify; text-align-last: left;">
+                  <strong>
+                    ¿Qué diferencias se observan en el contenido de 
+                    <span class="fragment highlight-green">vitamina C</span>, 
+                    <span class="fragment highlight-blue">compuestos fenólicos</span> 
+                    y 
+                    <span class="fragment highlight-blue">actividad antioxidante</span> 
+                    de frutos almacenados en ambos sistemas durante un mismo período?
+                  </strong>
+                </p>
+
+                <!-- Pregunta 3 -->
+                <p style="font-size: 24px; text-align: justify; text-align-last: left;">
+                  <strong>
+                    ¿La 
+                    <span class="fragment highlight-green">menor frecuencia</span> 
+                    y 
+                    <span class="fragment highlight-green">duración de los ciclos de deshielo</span> 
+                    en el sistema con 
+                    <span class="fragment highlight-red">aletas fractales</span> 
+                    se relaciona con 
+                    <span class="fragment highlight-blue">menores pérdidas de agua</span> 
+                    (pérdida de masa) y mejor 
+                    <span class="fragment highlight-blue">textura de los alimentos refrigerados</span>?
+                  </strong>
+                </p>
+              </section>
+
+
+
+
+
+              <section>
+                <h4>Hipótesis</h4>
+                <p style="font-size: 26px; text-align: justify; text-align-last: left;">
+                  El uso de 
+                  <span class="fragment highlight-red"><strong>aletas con geometría fractal</strong></span>, generadas mediante el método 
+                  <span class="fragment highlight-blue"><strong>L-system</strong></span>, mejora el 
+                  <span class="fragment highlight-green"><strong>rendimiento térmico</strong></span> de los sistemas de enfriamiento respecto a 
+                  <strong>aletas rectangulares tradicionales</strong>, al 
+                  <span class="fragment highlight-blue"><strong>reducir el tiempo de deshielo</strong></span> y 
+                  <span class="fragment highlight-green"><strong>mejorar la estabilidad térmica</strong></span> bajo condiciones variables de 
+                  <span class="fragment highlight-blue"><strong>velocidad del viento</strong></span> y 
+                  <span class="fragment highlight-green"><strong>humedad relativa</strong></span>, debido al 
+                  <span class="fragment highlight-red"><strong>aumento en el área de intercambio</strong></span> y a la 
+                  <span class="fragment highlight-red"><strong>redistribución del flujo de aire</strong></span> en torno a las aletas.
+                </p>
+              </section>
+              
+              
+              <section>
+                <h4>Hipótesis</h4>
+                <p style="font-size: 26px; text-align: justify; text-align-last: left;">
+                  El uso de 
+                  <span class="fragment highlight-red"><strong>aletas fractales</strong></span> 
+                  en el 
+                  <span class="fragment highlight-blue"><strong>radiador frío</strong></span> 
+                  de un 
+                  <span class="fragment highlight-blue"><strong>sistema termoeléctrico</strong></span> 
+                  mejora el 
+                  <span class="fragment highlight-red"><strong>intercambio de calor</strong></span>, 
+                  reduce la 
+                  <span class="fragment highlight-blue"><strong>frecuencia de ciclos de deshielo</strong></span> 
+                  y mantiene una 
+                  <span class="fragment highlight-green"><strong>temperatura más estable</strong></span>, 
+                  lo cual se traduce en una 
+                  <span class="fragment highlight-green"><strong>mejor conservación de las propiedades fisicoquímicas</strong></span> 
+                  de los 
+                  <span class="fragment highlight-green"><strong>alimentos refrigerados</strong></span>.
+                </p>
+              </section>
+              
+
+              
+              
+                  <!--Deben ser medibles 
+                  Verbos: describir, clasificar, analizar
+                  Debe iniciar con un verbo en infinitivo (ar er ir) | 
+                  Que se puedan comprobar durante el trabajo
+                  -->
+
+              <section>
+
+                <h5>Objetivo General</h5>
+                <p class="fragment fade-in" style="font-size: 18px; text-align: justify; text-align-last: left;">
+                  Evaluar experimentalmente el desempeño térmico de aletas con geometría fractal, generadas mediante L-systems, en comparación con aletas rectangulares tradicionales, en un sistema de enfriamiento instalado en un túnel de viento, bajo condiciones controladas de velocidad del aire y humedad relativa, con el fin de justificar su aplicación en evaporadores para mejorar la eficiencia de los ciclos de deshielo en la cadena de frío.
+                </p>
+
+                <h5>Objetivos Específicos</h5>
+                <ul class="fragment fade-in" style="font-size: 18px; text-align: justify; text-align-last: left;">
+                  <li>Diseñar y fabricar un conjunto de aletas con geometría fractal y rectangulares, considerando distintas iteraciones fractales y restricciones prácticas de manufactura, como precisión de corte y resistencia estructural.</li>
+                  <li>Implementar un sistema experimental en un túnel de viento, que permita controlar la velocidad del aire y la humedad relativa, así como registrar el tiempo de deshielo, la estabilidad térmica y las variables ambientales.</li>
+                  <li>Evaluar el efecto del tipo de diseño, número de iteraciones y orientación de las aletas sobre el tiempo de deshielo y la estabilidad térmica del sistema.</li>
+                  <li>Analizar la influencia de la velocidad del viento y la humedad relativa sobre el desempeño térmico de los distintos tipos de aletas.</li>
+                  <li>Identificar combinaciones de diseño y condiciones operativas que optimicen la eficiencia térmica y la sostenibilidad del proceso de deshielo, aportando evidencia experimental que respalde la incorporación de aletas fractales en evaporadores industriales.</li>
+                </ul>
+              </section>
+                                                
+                
+            </section>
+
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/simplemenu/simplemenu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+                margin: 0.0001,
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                minScale: 1.,
+                maxScale: 1.2,
+                slideNumber: true,
+                previewLinks: 'auto',
+                simplemenu: {
+                    menuclass: "menu",
+                    activeclass: "active",
+                    activeelement: "li",
+                    selectby: "id",
+                    barhtml: {
+                        header: "",
+                        footer: ""
+                    },
+                    flat: true,
+                    scale: 0.67,
+                    csspath: ""
+               },
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, Simplemenu]
+			});
+		</script>
+        
+        
+	</body>
+</html>
+
